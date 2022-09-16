@@ -1,0 +1,19 @@
+.sidebar-content-flex {
+  padding: 40px 20px;
+  .sidebar-title-style {
+    color: #455a64;
+    font-size: 15px;
+    padding: 8px 0px;
+    font-weight: 600;
+  }
+  .sidebar-link-style {
+    font-size: 14px;
+    color: #455a64;
+    padding: 8px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: #4fc08d;
+    }
+  }
+}
