@@ -9,10 +9,18 @@
   .sidebar-link-style {
     font-size: 14px;
     color: #455a64;
-    padding: 8px 0px;
+    padding: 8px 10px;
     text-decoration: none;
     cursor: pointer;
     &:hover {
+      color: #4fc08d;
+    }
+  }
+  .sidebar-link-active {
+    background-color: #ebfff0;
+    color: #4fc08d;
+    border-radius: 16px;
+    > a {
       color: #4fc08d;
     }
   }

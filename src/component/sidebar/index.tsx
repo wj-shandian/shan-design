@@ -1,20 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./index.scss";
 export default function Sidebar() {
+  const location = useLocation();
+  const { pathname } = location;
+  console.log(pathname, "pathname");
   const data = [
     {
       title: "开发指南",
       link: [
         {
-          path: "/button",
+          path: "/1",
           name: "常见问题",
         },
         {
-          path: "/button",
+          path: "/2",
           name: "更新日志",
         },
         {
-          path: "/button",
+          path: "/3",
           name: "贡献指南",
         },
       ],
@@ -32,7 +35,7 @@ export default function Sidebar() {
       title: "展示组件",
       link: [
         {
-          path: "/button",
+          path: "/4",
           name: "导航栏目",
         },
       ],
@@ -47,7 +50,12 @@ export default function Sidebar() {
               {item?.title}
             </div>
             {item?.link?.map((e) => (
-              <div key={e?.path} className="sidebar-link-style">
+              <div
+                key={e?.path}
+                className={`${
+                  e?.path === pathname ? "sidebar-link-active" : ""
+                } sidebar-link-style `}
+              >
                 <Link to={e?.path} className="sidebar-link-style">
                   {e?.name}
                 </Link>
