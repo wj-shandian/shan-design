@@ -1,0 +1,54 @@
+.shan-btn {
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2px;
+  user-select: none;
+  touch-action: manipulation;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 4px 15px;
+  color: #000000d9;
+  border-color: #d9d9d9;
+  background: #fff;
+  height: 32px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  &:hover {
+    color: $primaryColor;
+    border-color: $primaryColor;
+  }
+}
+.shan-btn-primary {
+  color: #ffffff;
+  background-color: $primaryColor;
+  border: none;
+  &:hover {
+    color: #fff;
+    border-color: $primaryColorHover;
+    background-color: $primaryColorHover;
+  }
+}
+.shan-btn-dashed {
+  border-style: dashed;
+}
+.shan-btn-text {
+  box-shadow: none;
+  border-color: transparent;
+  color: #000000d9;
+  &:hover {
+    color: #000000d9;
+    background: rgba(0, 0, 0, 0.018);
+    border-color: transparent;
+  }
+}
+.shan-btn-link {
+  color: $primaryColor;
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  &:hover {
+    color: $primaryColorHover;
+    border-color: transparent;
+  }
+}
